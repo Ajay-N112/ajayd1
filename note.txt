@@ -1,0 +1,45 @@
+API - application programming interface
+
+
+API stands for Application Programming Interface. In the context of APIs, the word Application
+ refers to anysoftware with a distinct function. Interface can be thought of as a contract of service
+  between two applications.This contract defines how the two communicate with each other using
+ requests and responses.
+
+ api using protocol is - HTTP protocol
+
+ HTTPS - hyper text transefer protocol sequre
+these two protocols are mainly used in api
+
+HTTP STRUCTURE  
+
+ Header and body
+ header - store serect data
+ body - data JSON 
+
+HTTP MEATHODS
+
+create - post
+Read - get
+update - put (complete updation),patch (parallel updation)
+Delete - Delete
+
+
+STATUS CODE
+
+1xx - inforamation
+2xx - success- data
+3xx - redirection
+4xx - client side error - 404 error
+5xx - server side error 
+
+FAKE APIS
+
+ A mock API server imitates a real API server by providing realistic responses to requests.
+
+
+ PUBLIC API 
+ 
+ https://cdn-api.co-vin.in/api/v2/auth/public/generateOTP REST API - Representational State Transfer 
+
+ API TESTING TOOLS - Thunder client , postman
