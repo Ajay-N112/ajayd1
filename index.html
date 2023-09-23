@@ -37,7 +37,9 @@
     <div id="result"></div>
     <script>
         function searchData() {
-            const cityName = document.getElementById('cname').value;
+           
+        cityName=cname.value
+;
 
             fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=b41ec3be35c7dac8aabbc21ba253137a`)
                 .then(response => response.json())
@@ -45,10 +47,10 @@
         }
 
         function displayData(data) {
-            const locationName = document.getElementById('locationName');
-            const temperature = document.getElementById('temperature');
-            const windSpeed = document.getElementById('windSpeed');
-            const humidity = document.getElementById('humidity');
+            locationName = document.getElementById('locationName');
+             temperature = document.getElementById('temperature');
+             windSpeed = document.getElementById('windSpeed');
+             humidity = document.getElementById('humidity');
 
             locationName.textContent = data.name;
             temperature.textContent = (data.main.temp - 273.15).toFixed(2) + " °C"; // Convert to Celsius
